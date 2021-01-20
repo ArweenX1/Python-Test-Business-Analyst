@@ -1,0 +1,41 @@
+Imagine we have data from a store. The data lists a Sales trend color and Revenue for 500 consecutive days.
+
+Please perform your analysis in a Jupyter Notebook in Python.
+
+
+1. Import data sets (Test_data1 and Test_data2)
+
+	*Done in Jupyter notebook
+		1) Test_data1 is a .csv
+			a) data = pd.read_csv('Test_data1.csv') 
+		2) Test_data2 is a .txt 
+			a) data = pd.read_csv('Test_data2.txt)
+
+2. Describe any issues with either data set.
+
+	*Issues with "Test_data1.csv" 
+		1) Sales.column contained the following "Green, Yellow, Red,'blank','fhhedk' 
+			a) 2 variables to be cleaned first 'blank' 
+			b) second 'fhhedk' (presumed it was a typo) 
+		2) Date.column had the .dtype as 'object', I went ahead and converted to date 
+
+	*Issues with "Test_data2.txt" 
+		1) File was .txt, I converted to .csv to make things easier 
+		2) Text delimiter used was '|' (pipes), I separated it via the delimiter to properly appear in df(data frame)
+		3) Revenue.column was object data type, converted to int(integer)
+		4) Random input was found in Revenue.column "@#$%%#@$$" 
+
+
+3. Propose a mathematical relationship to explain Revenue for any date. You are free to make any assumptions in order to produce a relationship. Please show and describe all intermediate steps and exploratory analyses.
+
+	*Refer to supplemented documentation 
+
+
+
+
+------------------------------------------
+
+Methods to view Jupyter notebook ; 
+
+1) File attached in folder 
+2) Go to GitHub repository to view interactive line by line ipython code : https://github.com/ArweenX1/Python-Test-Business-Analyst/blob/main/Test%20Jupyter%20Notebook.ipynb
